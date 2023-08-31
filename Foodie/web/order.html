@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pembelian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pembelian</h1>
+    <form action="OrderServlet" method="get">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label>Jumlah Pesanan:</label><br>
+        <input type="checkbox" id="jumlahPesanan" name="jumlahPesanan" value="1">
+        <label for="jumlahPesanan">iPhone 14</label><br>
+        <input type="checkbox" id="jumlahPesanan" name="jumlahPesanan" value="2">
+        <label for="jumlahPesanan">iPad 10</label><br>
+        <input type="checkbox" id="jumlahPesanan" name="jumlahPesanan" value="3">
+        <label for="jumlahPesanan">Macbook Pro</label><br>
+
+        <br>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required><br><br>
+
+        <label for="kodeDiskon">Kode Diskon:</label>
+        <input type="text" id="kodeDiskon" name="kodeDiskon"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

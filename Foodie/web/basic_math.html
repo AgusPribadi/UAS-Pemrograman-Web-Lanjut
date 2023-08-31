@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Basic Math</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+            main{
+                width: 80%;
+                margin: 0 auto;
+            }
+            .container{
+                border-style:solid;
+                border-width: 1px;
+                padding: 10px
+            }
+            .flex{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding: 4px
+            }
+            .padding{
+                padding: 4px;
+                width: 100%
+            }
+            .flex-container{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 6px
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>
+                Basic Math
+            </h1>
+            <div class="container">
+                <form action="basic_result.jsp" method="GET" class="flex">
+                    <label for="operandSatu">First Number</label>
+                    <input type="number" name="operandSatu" id="operandSatu" class="padding" />
+                    <label for="operandDua">Second Number</label>
+                    <input type="number" name="operandDua" id="operandDua" class="padding" />
+                    <div class="flex-container">
+                        <input type="submit" value="Tambah" name="operator" class="padding"  />
+                        <input type="submit" value="Kurang" name="operator" class="padding"/>
+                        <input type="submit" value="Kali" name="operator" class="padding"/>
+                        <input type="submit" value="Bagi" name="operator" class="padding"/>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+
+</html>
